@@ -3,43 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>Sports & Fitness</title>
+    <link rel="stylesheet" type="text/css" href="Mywebsite.css">
+<script src="include-navigation.js"></script>
+<!--#include virtual="navigation.html" -->
+
 </head>
+<div id="navigation-container"></div>
+
+
+
 <body>
+    <div id="navigation-container"></div>
+
     <header>
-        <h1>Welcome to My Web Page</h1>
+        <h1>Welcome to Sports & Fitness</h1>
     </header>
 
-    <!-- This is where the navigation will be inserted -->
-    <div id="navigation"></div>
-
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>This is a sample webpage.</p>
-        </section>
-
-        <section>
-            <h2>Services</h2>
-            <ul>
-                <li>Web Design</li>
-                <li>Graphic Design</li>
-                <li>SEO Services</li>
-            </ul>
-        </section>
-    </main>
-
+    <section class="gallery">
+        <h2>Image Gallery</h2>
+        <div class="image">
+            <img src="image1.jpg" alt="Sports Image 1">
+        </div>
+        <div class="image">
+            <img src="image2.jpg" alt="Sports Image 2">
+        </div>
+        <!-- Add more images here -->
+    </section>
     <footer>
-        <p>&copy; 2023 My Web Page</p>
+        <p>&copy; 2023 Sports & Fitness</p>
     </footer>
 
-    <script>
-        // Use JavaScript to fetch and insert the navigation
-        fetch('navigation.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navigation').innerHTML = data;
-            });
-    </script>
+    
+    
+    
 </body>
 </html>
