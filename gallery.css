@@ -1,0 +1,26 @@
+/* styles.css */
+
+/* Style the gallery container */
+#image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style individual gallery items (images) */
+.gallery-item {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width as needed */
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+}
+
+/* Add hover effect on images */
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
